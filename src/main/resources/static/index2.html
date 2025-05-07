@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <!-- rel >relationship의 줄인말 관계 //href > Hypertext Reference줄인말 텍스트 참조-->
+</head>
+<body>
+    <div class="alert-box" id ="box"> Alert 박스 </div>
+    <button onclick="alertOpen()">버튼</button>
+    <button onclick="alertClose()">닫기</button>
+
+    <script>
+
+        function alertOpen() {
+         document.getElementById('box').style.display = 'block';
+        }
+
+        function alertClose() {
+         document.getElementById('box').style.display = 'none';
+        }
+
+    </script>
+</body>
+</html>

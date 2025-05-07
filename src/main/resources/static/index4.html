@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <!-- rel >relationship의 줄인말 관계 //href > Hypertext Reference줄인말 텍스트 참조-->
+</head>
+<body>
+    <div class="alert-box" id ="alert">
+        <p id = "title"> alert 박스</p>
+        <button id = "close"> X </button>
+    </div>
+    <button onclick="targetAlert1('아아디')">버튼1</button>
+    <button onclick="targetAlert1('비밀번호')">버튼2</button>
+
+    <script>
+
+        document.getElementById('close').addEventListener('mouseover', function(){
+            document.getElementById('alert').style.display = 'none';
+        });
+
+        function targetAlert1(content) {
+            document.getElementById('title').innerHTML = content;
+            document.getElementById('alert').style.display = 'block';
+        }
+
+    </script>
+</body>
+</html>

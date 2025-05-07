@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <!-- rel >relationship의 줄인말 관계 //href > Hypertext Reference줄인말 텍스트 참조-->
+</head>
+<body>
+    <div class="alert-box" id ="userId"> 아이디를 입력 안하셨어요</div>
+    <button onclick="targetAlert('userId', 'block')">버튼</button>
+    <button onclick="targetAlert('userId', 'none')">닫기</button>
+
+    <div class="alert-box" id ="passwordId"> 비밀번호를 입력 안하셨어요</div>
+    <button onclick="targetAlert('passwordId', 'block')">버튼</button>
+    <button onclick="targetAlert('passwordId', 'none')">닫기</button>
+    <script>
+
+        function targetAlert(alertId, displayType) {
+         document.getElementById(alertId).style.display = displayType;
+        }
+
+    </script>
+</body>
+</html>
